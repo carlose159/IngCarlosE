@@ -1,0 +1,241 @@
+/* ======================================================= */
+            /* Aspectos generales de la pagina */
+/* ======================================================= */
+
+/* Cuerpo de la pagina */
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera y Barra de Navegacion */
+header{
+    display: flex;
+    width: 100%;
+    background-color: #333;
+    justify-content: flex-end;
+    }
+
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        list-style-type: none;
+        margin-right: 10px;
+        margin: 0;
+        padding: 0;
+    }
+            
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+/*Pie de pagina */
+footer {
+    max-height: 125px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;  
+    }
+      
+    footer ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0px;
+    }
+      
+    footer ul li {
+        display: flex;
+    }
+      
+    footer ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    footer div h2{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    footer div h3{
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* Contenido principal o contenido principal */
+main{
+    width: 100%;
+    height: 792px;
+    display: flex;
+}
+
+            /*Aspectos especificos segun la pagina*/
+
+/* ======================================================= */
+                /* Pagina de Perfil */
+/* ======================================================= */
+/* Contenido principal */
+/* Pagina de perfil */
+.Perfil{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    padding: 100px;
+}
+/* Parrafos y titulos */
+p{
+    margin: 10px;
+}
+.content h1{
+    text-align: center;
+}
+
+/* ======================================================= */
+                /* Pagina de Inicio */
+/* ======================================================= */
+
+/*Pagina de Inicio*/
+.Principal{
+    width: 100%;
+    height: 792px;
+    background-color: black;
+    display: flex;
+    }
+    /* Manejo de la imagen*/
+    .image-slider{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        position: relative;
+        overflow: auto;
+        align-items: center;
+    }
+    /* Manejo de los botones*/
+    .siguiente{
+        height: 100%;
+        width: 10%;
+        display: flex;
+        position: absolute;
+        right: 0%;
+    }
+    .anterior{   
+        height: 100%;
+        width: 10%;
+        display: flex;
+        position: absolute;
+        left: 0px;
+    }
+    .button-slider{
+        height: 100%;
+        width: 10%;
+        font-size: 60px;
+
+        background-color: transparent;
+        border: none;
+    }
+    .button-slider:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+/* ======================================================= */
+            /* Pagina de Contacto */
+/* ======================================================= */
+/* Contenido Principal */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+/* Titulos*/
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+/* Formulario */
+  form {
+    margin-bottom: 20px;
+  }  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  form input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form input[type="submit"]:hover {
+    background-color: rgba(14, 13, 13, 0.5);
+  }
+
+/* ======================================================= */
+            /* Pagina de Contacto */
+/* ======================================================= */
+/* Contenido Principal */
+  .experiencia{
+    width: 100%;
+    height: 792px;
+    padding: 0px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .experiencia_main section h2{
+    justify-content: center;
+    align-self: center;
+  }
+  .lineadiv{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: 1px solid black;
+  }
+  .experiencia div{
+    margin: 10px;
+  }
