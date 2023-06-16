@@ -3,14 +3,13 @@
 /* ======================================================= */
 
 /* Cuerpo de la pagina */
-body{
+body{ 
+    height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    align-items: center;
-    text-align: justify;
     margin: 0;
-    padding: 0;
 }
 
 /* Cabecera y Barra de Navegacion */
@@ -18,43 +17,44 @@ header{
     display: flex;
     width: 100%;
     background-color: #333;
-    justify-content: flex-end;
     }
 
     nav{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         width: 100%;
         padding: 10px;
     }
-
     nav ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
         width: 50%;
         list-style-type: none;
         margin-right: 10px;
         margin: 0;
         padding: 0;
+        gap: 40px;
     }
-            
     nav ul li a{
-        color: #fff;
-        text-decoration: none;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav a{
+      color: #fff;
+      text-decoration: none;
     }
 
 /*Pie de pagina */
 footer {
-    max-height: 125px;
+    position: relative;
+    width: 100%;  
+    min-height: 80px;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #333;
     color: #fff;
-    text-align: center;  
+    text-align: center;
     }
       
     footer ul {
@@ -64,6 +64,8 @@ footer {
         justify-content: center;
         list-style-type: none;
         padding: 0px;
+        margin-bottom: 2px;
+        margin-top: 0px;
     }
       
     footer ul li {
@@ -86,11 +88,6 @@ footer {
     }
 
 /* Contenido principal o contenido principal */
-main{
-    width: 100%;
-    height: 792px;
-    display: flex;
-}
 
             /*Aspectos especificos segun la pagina*/
 
@@ -100,17 +97,21 @@ main{
 /* Contenido principal */
 /* Pagina de perfil */
 .Perfil{
-    height: 100%;
-    width: 75%;
+    position: relative;
+    min-height: 65.3vh; 
+    width: 90%;
     display: flex;
-    padding: 100px;
+    text-align: justify;
+    padding: 41.5px;
 }
 /* Parrafos y titulos */
 p{
     margin: 10px;
 }
 .content h1{
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* ======================================================= */
@@ -120,9 +121,9 @@ p{
 /*Pagina de Inicio*/
 .Principal{
     width: 100%;
-    height: 792px;
     background-color: black;
     display: flex;
+    position: relative;
     }
     /* Manejo de la imagen*/
     .image-slider{
@@ -165,6 +166,7 @@ p{
 /* ======================================================= */
 /* Contenido Principal */
 .contacto {
+    min-height: 78.2vh;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,18 +215,13 @@ p{
   }
 
 /* ======================================================= */
-            /* Pagina de Contacto */
+            /* Pagina de Experiencias */
 /* ======================================================= */
 /* Contenido Principal */
   .experiencia{
-    width: 100%;
-    height: 792px;
     padding: 0px 100px 10px 100px;
     display: flex;
     flex-direction: column;
-    
-    overflow-y: auto;
-    overflow-x: hidden;
   }
   .experiencia_main section h2{
     justify-content: center;
